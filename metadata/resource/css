@@ -1,0 +1,15 @@
+{
+    "type": "cssresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "css",
+        "remote": false,
+        "url": "css/mplayer.css"
+    },
+    "name": "css",
+    "designerId": "9b667edb-d027-4d09-bdd1-5d7e85a0ea10"
+}

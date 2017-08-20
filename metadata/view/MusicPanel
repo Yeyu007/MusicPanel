@@ -1,0 +1,20 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "musicPanel",
+        "designer|userClassName": "MusicPanel",
+        "fullscreen": false,
+        "height": 100,
+        "hidden": false,
+        "html": "<div class=\"mp\"> \t<div class=\"mp-box\"> \t\t \t\t<img src=\"img/mplayer_error.png\" alt=\"music cover\" class=\"mp-cover\"> \t\t \t\t<div class=\"mp-info\"> \t\t\t<p class=\"mp-name\">暂无歌曲</p> \t\t\t<p class=\"mp-singer\">歌手名</p> \t\t\t<p><span class=\"mp-time-current\">00:00</span>/<span class=\"mp-time-all\">00:00</span></p> \t\t</div> \t\t<div class=\"mp-btn\"> \t\t\t<button class=\"mp-prev\" title=\"上一首\"></button> \t\t\t<button class=\"mp-pause\" title=\"播放\"></button> \t\t\t<button class=\"mp-next\" title=\"下一首\"></button> \t\t\t<button class=\"mp-mode\" title=\"播放模式\"></button> \t\t</div> \t\t<div class=\"mp-pro\"> \t\t\t<div class=\"mp-pro-current\"></div> \t\t</div> \t</div> \t<button class=\"mp-toggle\"> \t\t<span class=\"mp-toggle-img\"></span> \t</button> \t<div class=\"mp-lrc-box mp-lrc-show\"> \t\t<ul class=\"mp-lrc\"></ul> \t</div> \t<div class=\"mp-list-box\"> \t\t<ul class=\"mp-list-title\"></ul> \t\t<table class=\"mp-list-table\"> \t\t\t<thead> \t\t\t\t<tr> \t\t\t\t\t<th>歌名</th> \t\t\t\t\t<th>歌手</th> \t\t\t\t\t<th>时长</th> \t\t\t\t</tr> \t\t\t</thead> \t\t\t<tbody class=\"mp-list\"></tbody> \t\t</table> \t</div> </div>",
+        "top": "85%",
+        "width": "100%"
+    },
+    "name": "MyContainer",
+    "designerId": "4d79bd7e-43af-48a3-9f8e-ded32bd9de29"
+}

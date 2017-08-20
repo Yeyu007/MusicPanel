@@ -1,0 +1,35 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "areaList",
+        "designer|userClassName": "AreaList",
+        "height": "100%",
+        "itemId": "styleList1",
+        "store": "AreaStore"
+    },
+    "name": "MyList5",
+    "designerId": "c698a9c7-7265-4832-8bf8-1224c57406c2",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "itemTpl",
+                "implHandler": [
+                    "<div>{title}</div>"
+                ]
+            },
+            "name": "itemTpl",
+            "designerId": "d72fcd46-f409-461c-a8f1-ff8e886fb79c"
+        }
+    ]
+}

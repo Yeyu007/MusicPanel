@@ -1,0 +1,19 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "bootstrap": true,
+        "defer": false,
+        "designer|userClassName": "js",
+        "includeInBundle": false,
+        "remote": false,
+        "url": "js/jquery.min.js",
+        "x-compile": true
+    },
+    "name": "js",
+    "designerId": "51671eb6-598d-4769-9a2a-8ae430cf3145"
+}

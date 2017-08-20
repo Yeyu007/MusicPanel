@@ -1,0 +1,95 @@
+{
+   "name": "MusicApp",
+   "indexHtmlPath": "index.html",
+   "url": null,
+   "js": [
+      {
+         "path": "touch/sencha-touch.js",
+         "x-bootstrap": true
+      },
+      {
+         "path": "bootstrap.js",
+         "x-bootstrap": true
+      },
+      {
+         "path": "js/jquery.min.js",
+         "remote": false,
+         "bootstrap": true,
+         "x-compile": true,
+         "includeInBundle": false
+      },
+      {
+         "path": "js/mplayer.js",
+         "bootstrap": true,
+         "x-compile": true
+      },
+      {
+         "path": "js/mplayer-list.js",
+         "bootstrap": true,
+         "x-compile": true
+      },
+      {
+         "path": "js/mplayer-functions.js",
+         "bootstrap": true,
+         "x-compile": true
+      },
+      {
+         "path": "js/jquery.nstSlider.min.js",
+         "bootstrap": true,
+         "x-compile": true
+      },
+      {
+         "path": "app.js",
+         "bundle": true,
+         "update": "delta"
+      }
+   ],
+   "css": [
+      {
+         "update": "delta",
+         "platform": [
+            "phone",
+            "tablet",
+            "desktop"
+         ],
+         "theme": "Default",
+         "path": "resources/css/sencha-touch-cff43afc-635d-49a5-932b-641c7fbf6d55.css"
+      },
+      {
+         "path": "css/mplayer.css",
+         "remote": false
+      },
+      {
+         "update": "delta",
+         "platform": [
+            "phone",
+            "tablet",
+            "desktop"
+         ],
+         "theme": "Default",
+         "path": "resources/css/sencha-touch-28d61078-e754-4f3f-8ccc-752f1bbb2537.css"
+      }
+   ],
+   "appCache": {
+      "cache": [
+         "index.html"
+      ],
+      "network": [
+         "*"
+      ],
+      "fallback": []
+   },
+   "resources": [
+      "resources/images",
+      "resources/icons",
+      "resources/startup",
+      "css/mplayer.css"
+   ],
+   "ignore": [
+      ".svn$"
+   ],
+   "archivePath": "archive",
+   "requires": [],
+   "id": "2ca37b36-aa3d-4c37-9bd5-5d54f9646b47",
+   "classpath": "${app.dir}/app,${app.dir}/js/"
+}

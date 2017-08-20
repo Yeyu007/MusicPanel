@@ -1,0 +1,14 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "music",
+        "designer|userClassName": "MusicList"
+    },
+    "name": "MyList1",
+    "designerId": "1f140a87-9f8b-44a6-8484-84c2e4183db4"
+}

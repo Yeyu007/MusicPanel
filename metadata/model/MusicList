@@ -1,0 +1,142 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "music",
+        "designer|userClassName": "MusicList"
+    },
+    "name": "MyModel",
+    "designerId": "b1ec82f1-8b8d-43e9-b84c-d3d60d11fbc2",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name",
+                "type": "string"
+            },
+            "name": "field5",
+            "designerId": "887d3fbb-3baf-4a9c-821a-b9fc8aa4e7f9"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "type",
+                "type": "string"
+            },
+            "name": "field6",
+            "designerId": "9dd43ed8-6995-44db-ac9f-e9429dcb5f55"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "authorName",
+                "type": "string"
+            },
+            "name": "field7",
+            "designerId": "615fe912-6138-41f8-9ed9-42aa99a5ca3a"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "image",
+                "type": "string"
+            },
+            "name": "field8",
+            "designerId": "759f905f-c173-44fc-b639-7dbf5f2bc184"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "pubdate",
+                "type": "string"
+            },
+            "name": "field9",
+            "designerId": "84baa20b-047e-4aeb-ad52-74ca12713bc1"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "publisher",
+                "type": "string"
+            },
+            "name": "field10",
+            "designerId": "70072e2f-4edc-4cfa-adb1-dc67aafe3716"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "singer",
+                "type": "string"
+            },
+            "name": "field11",
+            "designerId": "822950cc-081a-4fe2-b953-b347d2aaf076"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "songId",
+                "type": "string"
+            },
+            "name": "field12",
+            "designerId": "6ff5d5c6-b601-484d-9a34-a8b4b32afd4e"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "album",
+                "type": "string"
+            },
+            "name": "field13",
+            "designerId": "33e2726a-1831-45c9-87aa-65b42bbf443b"
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "data": [
+            "[",
+            "    {",
+            "                title: '中国内地'",
+            "            },",
+            "            {",
+            "                title: '中国香港'",
+            "            },",
+            "            {",
+            "                title: '中国台湾'",
+            "            },",
+            "            {",
+            "                title: '欧美国家'",
+            "            },",
+            "            {",
+            "                title: '韩国'",
+            "            },",
+            "            {",
+            "                title: '日本'",
+            "            },",
+            "            {",
+            "                title: '其他'",
+            "            }",
+            "]"
+        ],
+        "designer|userClassName": "AreaStore",
+        "model": "AblumList",
+        "storeId": "AreaStore"
+    },
+    "name": "MyStore",
+    "designerId": "a324e51c-e494-4e0b-be3e-a3b393aeb98e"
+}

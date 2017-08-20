@@ -1,0 +1,73 @@
+{
+    "name": "NewMusic",
+    "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "5.0.2.250",
+            "frameworkVersion": "2.3.1.410"
+        },
+        "canvasControls": {
+            "viewportSize": {
+                "name": "iPhone",
+                "builtIn": true,
+                "height": 480,
+                "width": 320
+            },
+            "viewportOrientation": "portrait"
+        },
+        "urlPrefix": "http://localhost:1841",
+        "exportPath": "",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "projectHasEnabledWebServer": true
+    },
+    "xdsVersion": "3.1.0",
+    "xdsBuild": 1851,
+    "schemaVersion": 1,
+    "upgradeVersion": 300000000007,
+    "framework": "touch23",
+    "viewOrderMap": {
+        "view": [
+            "788ec8ae-1c09-4a13-a0c9-5137ee58e6cc",
+            "0ac8eba7-19ea-43ef-a421-5bc851476198",
+            "c698a9c7-7265-4832-8bf8-1224c57406c2",
+            "c93fb7e2-ae89-4310-88ea-d6a0c52db6d4",
+            "d09991a4-c454-4196-926a-3e9ae69087f5",
+            "428af2b4-c535-4b48-8a51-793711f0d616",
+            "4d79bd7e-43af-48a3-9f8e-ded32bd9de29",
+            "1f140a87-9f8b-44a6-8484-84c2e4183db4"
+        ],
+        "store": [
+            "581b728d-3394-4272-91f1-83ed7a645df2",
+            "cbaa88f4-e13f-40fa-840b-57b68ecd604d",
+            "a324e51c-e494-4e0b-be3e-a3b393aeb98e"
+        ],
+        "controller": [
+            "2e108d17-aa43-4245-ab88-7c58bd477077",
+            "b3682bd7-0c43-4c88-9558-64de6259ed7e"
+        ],
+        "model": [
+            "d8fa6d3b-4852-4139-87db-576815eb250b",
+            "275657b9-4c70-4b61-b8dd-57cbe5c6a83b",
+            "b1ec82f1-8b8d-43e9-b84c-d3d60d11fbc2"
+        ],
+        "resource": [
+            "d89d0007-cc29-46d5-8eab-f085e4ca16f6",
+            "28d61078-e754-4f3f-8ccc-752f1bbb2537",
+            "51671eb6-598d-4769-9a2a-8ae430cf3145",
+            "9b667edb-d027-4d09-bdd1-5d7e85a0ea10",
+            "d51db50d-cd6b-473c-8cec-885a05eeca34",
+            "1715900d-2267-466e-b06b-6cb35ee9a815",
+            "403cdcc5-650c-4f7e-aee1-013c5daff20e",
+            "9c5ace7d-b60c-4f6e-82d0-6fdbbce5d160"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

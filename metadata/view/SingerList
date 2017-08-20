@@ -1,0 +1,35 @@
+{
+    "type": "Ext.dataview.List",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "singerList",
+        "designer|userClassName": "SingerList",
+        "height": "100%",
+        "itemId": "styleList2",
+        "store": "StyleStore"
+    },
+    "name": "MyList6",
+    "designerId": "c93fb7e2-ae89-4310-88ea-d6a0c52db6d4",
+    "cn": [
+        {
+            "type": "Ext.XTemplate",
+            "reference": {
+                "name": "itemTpl",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "itemTpl",
+                "implHandler": [
+                    "<div>{title}</div>"
+                ]
+            },
+            "name": "itemTpl",
+            "designerId": "e092878f-a512-4c9b-9b3a-27afce596c73"
+        }
+    ]
+}

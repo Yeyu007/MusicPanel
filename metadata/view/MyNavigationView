@@ -1,0 +1,148 @@
+{
+    "type": "Ext.navigation.View",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "mynavigationview",
+        "designer|userClassName": "MyNavigationView",
+        "height": "85%",
+        "width": "100%"
+    },
+    "name": "MyNavigationView",
+    "designerId": "428af2b4-c535-4b48-8a51-793711f0d616",
+    "cn": [
+        {
+            "type": "Ext.navigation.Bar",
+            "reference": {
+                "name": "navigationBar",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "docked": "top",
+                "itemId": "mynavigationbar",
+                "width": "100%"
+            },
+            "name": "MyNavigationBar",
+            "designerId": "e9117b36-2ed6-4ad2-aa36-ffb848ff01d8",
+            "cn": [
+                {
+                    "type": "Ext.field.Search",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "centered": false,
+                        "designer|displayName": "SearchTab",
+                        "height": 48,
+                        "id": "searchTab",
+                        "itemId": "searchField",
+                        "label": "",
+                        "labelWidth": 0,
+                        "name": "mysearchfield",
+                        "placeHolder": "  搜索音乐、歌手等",
+                        "width": "100%"
+                    },
+                    "name": "MySearchField",
+                    "designerId": "3ae66127-b57a-4f4b-9cee-029e02293a2a"
+                }
+            ]
+        },
+        {
+            "type": "Ext.tab.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "container|animation": "fade",
+                "height": "100%"
+            },
+            "name": "MyTabPanel",
+            "designerId": "e651f285-5b9b-4287-823b-fedde68a8cd1",
+            "cn": [
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "风格"
+                    },
+                    "name": "stylelist",
+                    "designerId": "9c5bc8bf-d0f8-4750-a90f-859064648932",
+                    "masterInstanceId": "0ac8eba7-19ea-43ef-a421-5bc851476198"
+                },
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "地区"
+                    },
+                    "name": "arealist",
+                    "designerId": "f1a41c31-05c8-41d9-b63f-e2a23b21d2a2",
+                    "masterInstanceId": "c698a9c7-7265-4832-8bf8-1224c57406c2"
+                },
+                {
+                    "type": "linkedinstance",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "title": "歌手"
+                    },
+                    "name": "singerlist",
+                    "designerId": "0764b666-e2fa-478f-9319-e507e92dda64",
+                    "masterInstanceId": "c93fb7e2-ae89-4310-88ea-d6a0c52db6d4"
+                },
+                {
+                    "type": "Ext.tab.Bar",
+                    "reference": {
+                        "name": "tabBar",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "center",
+                        "container|pack": "center",
+                        "docked": "top",
+                        "height": "11%"
+                    },
+                    "name": "MyTabBar",
+                    "designerId": "ba014eac-6444-426e-a025-f8cb376198d0"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onNavigationviewBack",
+                "implHandler": [
+                    " this.getSearchTab().hide();"
+                ],
+                "name": "back"
+            },
+            "name": "onNavigationviewBack",
+            "designerId": "ff853567-2cbc-45cb-8f5c-ec9415cff3f2"
+        }
+    ]
+}

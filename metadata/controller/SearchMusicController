@@ -1,0 +1,106 @@
+{
+    "type": "Ext.app.Controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "SearchMusicController"
+    },
+    "name": "MyController",
+    "designerId": "b3682bd7-0c43-4c88-9558-64de6259ed7e",
+    "cn": [
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|controlQuery": "list#styleList",
+                "designer|targetType": "Ext.dataview.List",
+                "fn": "onStyleListItemTap",
+                "implHandler": [
+                    " var musicStore = Ext.create('Ext.data.Store',{",
+                    "            model:'MusicApp.model.MusicList'",
+                    "        });",
+                    "",
+                    "        $.ajax({",
+                    "            type: \"GET\",",
+                    "            url: \"http://tingapi.ting.baidu.com/v1/restserver/ting\",",
+                    "            dataType:'jsonp',",
+                    "            data: {method:\"baidu.ting.billboard.billList\",type:record.data.id,size:10,offset:0},",
+                    "            success: function(data){",
+                    "                var songList = data.song_list;",
+                    "",
+                    "        \t\tfor(var i=0;i<songList.length;i++){",
+                    "",
+                    "        \t\t\t//创建模型实例",
+                    "                    var musicOne = Ext.create('MusicApp.model.MusicList');",
+                    "        \t\t\tmusicOne.set('name',songList[i].title);",
+                    "        \t\t\tmusicOne.set('type',songList[i].code_type);",
+                    "                    musicOne.set('image',songList[i].pic_small);",
+                    "        \t\t\tmusicOne.set('authorName',songList[i].artist_name);",
+                    "        \t\t\tmusicOne.set('pubdate',songList[i].publishtime);",
+                    "        \t\t\tmusicOne.set('songId',songList[i].song_id);",
+                    "                    musicOne.set('album',songList[i].album_title);",
+                    "                    musicStore.add(musicOne);",
+                    "        \t\t}",
+                    "            }",
+                    "        });",
+                    "",
+                    "this.getSearchTab().hide();",
+                    "        this.getMyView().push({",
+                    "",
+                    "            title:record.data.title,",
+                    "            xtype:'music',",
+                    "            store:musicStore,",
+                    "             itemTpl: [",
+                    "                    '<table cellspacing=\"10\">',",
+                    "        \t\t\t\t'<tr><td rowspan=\"3\" width=80><image src=\"{image}\" width=50 height=50></td></tr>',",
+                    "        \t\t\t\t'<tr><td><p style=\"font:16px Arial,Helvetica,sans-serif\">{name}</p></td></tr>',",
+                    "        \t\t\t\t'<tr><td><p style=\"font:13px Arial,Helvetica,sans-serif\">{authorName} - {album}</p></td></tr>',",
+                    "",
+                    "        \t\t\t'</table>'",
+                    "                ]",
+                    "        });",
+                    "",
+                    ""
+                ],
+                "name": "itemtap"
+            },
+            "name": "onStyleListItemTap",
+            "designerId": "9d7c40c7-0e45-4cfb-a0dd-f5f1d155ac34"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "myView",
+                "selector": "mynavigationview"
+            },
+            "name": "myView",
+            "designerId": "4df80c64-1e0f-4107-9dad-1c9035d2b641"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "ref": "searchTab",
+                "selector": "#searchTab"
+            },
+            "name": "searchTab",
+            "designerId": "84762d8b-139b-42ac-a5a4-bd935a8b87e1"
+        }
+    ]
+}

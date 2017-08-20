@@ -1,0 +1,40 @@
+{
+    "type": "Ext.Container",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|userAlias": "main",
+        "designer|userClassName": "MainPanel",
+        "height": "100%"
+    },
+    "name": "MyContainer",
+    "designerId": "d09991a4-c454-4196-926a-3e9ae69087f5",
+    "cn": [
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "mynavigationview1",
+            "designerId": "f32ab74e-57d7-4494-823b-865a6c32b130",
+            "masterInstanceId": "428af2b4-c535-4b48-8a51-793711f0d616"
+        },
+        {
+            "type": "linkedinstance",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "name": "musicpanel",
+            "designerId": "1157407c-afa9-4131-8485-eba366820b67",
+            "masterInstanceId": "4d79bd7e-43af-48a3-9f8e-ded32bd9de29"
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "ablum",
+        "designer|userClassName": "AblumList"
+    },
+    "name": "MyModel",
+    "designerId": "275657b9-4c70-4b61-b8dd-57cbe5c6a83b",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "title",
+                "type": "string"
+            },
+            "name": "field3",
+            "designerId": "be71b07a-556b-4bea-b129-c478a1fb6e64"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id",
+                "type": "int"
+            },
+            "name": "field4",
+            "designerId": "01e0c52f-1f07-499f-8862-e34bb824bebe"
+        }
+    ]
+}
