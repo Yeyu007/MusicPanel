@@ -41,7 +41,7 @@ Ext.define('MusicApp.controller.SearchMusicController', {
                     data: {method:"baidu.ting.billboard.billList",type:record.data.id,size:10,offset:0},
                     success: function(data){
                         var songList = data.song_list;
-
+        //                 console.log(songList);
                 		for(var i=0;i<songList.length;i++){
 
                 			//创建模型实例
@@ -53,7 +53,6 @@ Ext.define('MusicApp.controller.SearchMusicController', {
                 			musicOne.set('pubdate',songList[i].publishtime);
                 			musicOne.set('songId',songList[i].song_id);
                             musicOne.set('album',songList[i].album_title);
-                            musicOne.set('src',songList[i].songLink);
                             musicOne.set('lrc',songList[i].lrclink);
                             musicStore.add(musicOne);
                 		}

@@ -1,2 +1,2 @@
 // @tag full-page
-// @require F:\git_project\MusicPanel\app.js
+// @require D:\git_project\MusicPanel\app.js

@@ -29,22 +29,38 @@ Ext.define('MusicApp.view.MusicList', {
     onListItemTap: function(dataview, index, target, record, e, eOpts) {
 
         $.ajax({
-        	url:record.data.lrc,
-        	dataType:'text',
-            data:'',
-        	jsonp:'callback',
-        	success:function(result) {
-                var db = Ext.create('MusicApp.model.DbModel');
-                db.set('name',record.data.name);
-                db.set('singer',record.data.authorName);
-                db.set('src',record.data.src);
-                db.set('img',record.data.image);
-                db.set('lrc',JSON.stringify(result));
-                console.log(JSON.stringify(db));
-                window.localStorage.setItem(record.data.songId,JSON.stringify(db));
-        	},
-        	timeout:3000
+            type: "GET",
+            url: "http://ting.baidu.com/data/music/links",
+            dataType:'jsonp',
+            data: {songIds:record.data.songId},
+            success: function(data){
+        //         console.log(data);
+                var oneSong = data.data.songList[0];
+                if(oneSong != undefined){
+                    $.ajax({
+                        url:oneSong.lrcLink,
+                        dataType:'text',
+                        data:'',
+                        jsonp:'callback',
+                        success:function(result) {
+                            var db = Ext.create('MusicApp.model.DbModel');
+                            db.set('name',oneSong.songName);
+                            db.set('singer',oneSong.artistName);
+                            db.set('src',oneSong.songLink);
+                            db.set('img',oneSong.songPicSmall);
+                            db.set('lrc',JSON.stringify(result));
+        //                     console.log(JSON.stringify(db));
+                            window.localStorage.setItem(record.data.songId,JSON.stringify(db.data));
+                        },
+                        timeout:3000
+                    });
+                }
+
+            }
         });
+
+
+
 
     }
 
