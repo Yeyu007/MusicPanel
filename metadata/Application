@@ -13,7 +13,8 @@
         "models": [
             "Person",
             "AblumList",
-            "MusicList"
+            "MusicList",
+            "DbModel"
         ],
         "name": "MusicApp",
         "requires": [

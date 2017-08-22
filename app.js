@@ -27,7 +27,8 @@ Ext.application({
     models: [
         'Person',
         'AblumList',
-        'MusicList'
+        'MusicList',
+        'DbModel'
     ],
     stores: [
         'People',

@@ -10,5 +10,42 @@
         "designer|userClassName": "MusicList"
     },
     "name": "MyList1",
-    "designerId": "1f140a87-9f8b-44a6-8484-84c2e4183db4"
+    "designerId": "1f140a87-9f8b-44a6-8484-84c2e4183db4",
+    "cn": [
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onListItemTap",
+                "implHandler": [
+                    "",
+                    "$.ajax({",
+                    "\turl:record.data.lrc,",
+                    "\tdataType:'text',",
+                    "    data:'',",
+                    "\tjsonp:'callback',",
+                    "\tsuccess:function(result) {",
+                    "        var db = Ext.create('MusicApp.model.DbModel');",
+                    "        db.set('name',record.data.name);",
+                    "        db.set('singer',record.data.authorName);",
+                    "        db.set('src',record.data.src);",
+                    "        db.set('img',record.data.image);",
+                    "        db.set('lrc',JSON.stringify(result));",
+                    "        console.log(JSON.stringify(db));",
+                    "        window.localStorage.setItem(record.data.songId,JSON.stringify(db));",
+                    "\t},",
+                    "\ttimeout:3000",
+                    "});",
+                    ""
+                ],
+                "name": "itemtap"
+            },
+            "name": "onListItemTap",
+            "designerId": "31e07ba4-d861-4d75-869d-c0a8ad7ee31a"
+        }
+    ]
 }

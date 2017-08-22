@@ -137,6 +137,34 @@
             },
             "name": "field13",
             "designerId": "33e2726a-1831-45c9-87aa-65b42bbf443b"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "src",
+                "type": "string"
+            },
+            "name": "field14",
+            "designerId": "faac01ff-53bf-4bcd-91fe-431a3a7c3694"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "lrc",
+                "type": "string"
+            },
+            "name": "field15",
+            "designerId": "7bd91139-bd2d-4433-8539-e6df894bebce"
         }
     ]
 }

@@ -58,6 +58,14 @@ Ext.define('MusicApp.model.MusicList', {
             {
                 name: 'album',
                 type: 'string'
+            },
+            {
+                name: 'src',
+                type: 'string'
+            },
+            {
+                name: 'lrc',
+                type: 'string'
             }
         ]
     }

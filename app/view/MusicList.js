@@ -18,6 +18,34 @@ Ext.define('MusicApp.view.MusicList', {
     alias: 'widget.music',
 
     config: {
+        listeners: [
+            {
+                fn: 'onListItemTap',
+                event: 'itemtap'
+            }
+        ]
+    },
+
+    onListItemTap: function(dataview, index, target, record, e, eOpts) {
+
+        $.ajax({
+        	url:record.data.lrc,
+        	dataType:'text',
+            data:'',
+        	jsonp:'callback',
+        	success:function(result) {
+                var db = Ext.create('MusicApp.model.DbModel');
+                db.set('name',record.data.name);
+                db.set('singer',record.data.authorName);
+                db.set('src',record.data.src);
+                db.set('img',record.data.image);
+                db.set('lrc',JSON.stringify(result));
+                console.log(JSON.stringify(db));
+                window.localStorage.setItem(record.data.songId,JSON.stringify(db));
+        	},
+        	timeout:3000
+        });
+
     }
 
 });

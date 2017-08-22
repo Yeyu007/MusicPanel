@@ -53,6 +53,8 @@ Ext.define('MusicApp.controller.SearchMusicController', {
                 			musicOne.set('pubdate',songList[i].publishtime);
                 			musicOne.set('songId',songList[i].song_id);
                             musicOne.set('album',songList[i].album_title);
+                            musicOne.set('src',songList[i].songLink);
+                            musicOne.set('lrc',songList[i].lrclink);
                             musicStore.add(musicOne);
                 		}
                     }

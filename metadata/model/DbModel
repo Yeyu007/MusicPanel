@@ -1,0 +1,80 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "DbModel"
+    },
+    "name": "MyModel",
+    "designerId": "ebca9a18-1e4a-4b90-b84c-b88075b02c0d",
+    "cn": [
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "name"
+            },
+            "name": "field16",
+            "designerId": "170cafe4-a7b1-4f69-bd7a-def5a4201e48"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "singer"
+            },
+            "name": "field17",
+            "designerId": "115390aa-4fe8-4952-9e81-fabad1b349e8"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "img"
+            },
+            "name": "field18",
+            "designerId": "c03523dc-4eca-4d3a-b774-944567998640"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "src"
+            },
+            "name": "field19",
+            "designerId": "c9c0e144-72e9-49cc-a28b-5cf42892f1f6"
+        },
+        {
+            "type": "Ext.data.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "lrc"
+            },
+            "name": "field20",
+            "designerId": "d07cd897-c890-4bf0-920a-824cd4478582"
+        }
+    ]
+}

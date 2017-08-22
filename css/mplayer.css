@@ -47,7 +47,6 @@
   height: 15%;
   position: fixed;
   left: 0px;
-  top:85% ;
   border-radius: 0 5px 5px 0;
   background-color: #212121;
   -webkit-transition: left .5s;
@@ -59,11 +58,6 @@
 .mp.mp-show {
   left: -95%;
 }
-
-.mp.mp-show .mp-toggle {
-	border-radius: 5px 0 0 5px;
-}
-
 /* line 61, mplayer.less */
 .mp.mp-show .mp-toggle-img {
   -webkit-transform: rotate(180deg);
@@ -72,6 +66,11 @@
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
+
+.mp.mp-show .mp-toggle {
+  border-radius: 5px 0 0 5px;
+}
+
 /* line 69, mplayer.less */
 .mp .mp-cover {
   height: 80%;
@@ -83,9 +82,9 @@
 /* line 76, mplayer.less */
 .mp .mp-info {
   position: absolute;
-  left: 25%;
+  left: 24%;
   top: 15%;
-  font-size: 2vh;
+  font-size: 1.8vh;
   line-height: 1.5;
 }
 /* line 83, mplayer.less */
@@ -149,11 +148,11 @@
 /* line 155, mplayer.less */
 .mp .mp-pro {
   width: 40%;
-  height: 2%;
+  height: 3px;
   border: 1px solid #d32f2f;
   position: absolute;
   bottom: 20%;
-  left: 50%;
+  left: 47%;
   cursor: pointer;
 }
 /* line 164, mplayer.less */
@@ -165,8 +164,8 @@
 /* line 169, mplayer.less */
 .mp .mp-btn {
   position: absolute;
-  top: 30%;
-  left: 50%;
+  top: 25%;
+  left: 47%;
   height: 70px;
   width: 45%;
 }
@@ -181,11 +180,13 @@
 /* line 185, mplayer.less */
 .mp .mp-prev {
   background: url("../img/pre.png") no-repeat;
+  /*background-size: 55px;*/
   margin-right: 10%;
 }
 /* line 189, mplayer.less */
 .mp .mp-next {
   background: url("../img/next.png") no-repeat;
+  /*background-size: 55px;*/
   margin-right: 10%;
 }
 /* line 193, mplayer.less */
@@ -195,11 +196,13 @@
   float: left;
   margin-right: 9%;
   background: url("../img/pause.png") no-repeat ;
+  /*background-size: 55px;*/
 }
 
 /* line 203, mplayer.less */
 .mp .mp-play {
   background: url("../img/play.png") no-repeat ;
+  /*background-size: 55px;*/
 }
 /* line 206, mplayer.less */
 .mp .mp-mode {
@@ -207,24 +210,29 @@
   height: 100%;
   float: left;
   background: url("../img/mode_0.png") no-repeat;
+  /*background-size: 60px;*/
   
 }
 
 /* line 217, mplayer.less */
 .mp .mp-mode-0 {
   background: url("../img/mode_0.png") no-repeat;
+  background-size: 60px;
 }
 /* line 220, mplayer.less */
 .mp .mp-mode-1 {
   background: url("../img/mode_1.png") no-repeat;
+  background-size: 60px;
 }
 /* line 223, mplayer.less */
 .mp .mp-mode-2 {
   background: url("../img/mode_2.png") no-repeat;
+  background-size: 60px;
 }
 /* line 226, mplayer.less */
 .mp .mp-mode-3 {
   background: url("../img/mode_3.png") no-repeat;
+  background-size: 60px;
 }
 
 /* line 285, mplayer.less */
@@ -238,7 +246,9 @@
   border-radius: 0 5px 5px 0;
 }
 /* line 292, mplayer.less */
-
+.mp .mp-toggle:hover {
+  background-color: #D32F2F;
+}
 /* line 296, mplayer.less */
 .mp .mp-toggle-img {
   width: 12px;
@@ -247,7 +257,7 @@
   background: url("../img/mplayer_bg.png") no-repeat -104px -126px;
   position: absolute;
   top: 40%;
-  left: 35%;
+  left: 25%;
   -webkit-transition: -webkit-transform 0.5s;
   -moz-transition: -moz-transform 0.5s;
   -o-transition: -o-transform 0.5s;
