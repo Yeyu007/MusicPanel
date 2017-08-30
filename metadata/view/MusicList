@@ -46,6 +46,8 @@
                     "                    db.set('lrc',JSON.stringify(result));",
                     "//                     console.log(JSON.stringify(db));",
                     "                    window.localStorage.setItem(record.data.songId,JSON.stringify(db.data));",
+                    "                    refreshMusicList();",
+                    "                    playFinal();",
                     "                },",
                     "                timeout:3000",
                     "            });",

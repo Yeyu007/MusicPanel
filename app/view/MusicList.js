@@ -48,9 +48,10 @@ Ext.define('MusicApp.view.MusicList', {
                             db.set('singer',oneSong.artistName);
                             db.set('src',oneSong.songLink);
                             db.set('img',oneSong.songPicSmall);
-                            db.set('lrc',JSON.stringify(result));
-        //                     console.log(JSON.stringify(db));
+                            db.set('lrc',result);
                             window.localStorage.setItem(record.data.songId,JSON.stringify(db.data));
+                            getPlater().refreshMusicList();
+//                          player.playFinal();
                         },
                         timeout:3000
                     });

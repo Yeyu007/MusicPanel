@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>MPlayer音乐播放器-A5源码</title>
+	<link rel="stylesheet" href="css/mplayer.css">
+	<script src="js/jquery.min.js"></script>
+<script src="js/mplayer.js"></script>
+<script src="js/mplayer-list.js"></script>
+<script src="js/mplayer-functions.js"></script>
+<script src="js/jquery.nstSlider.min.js"></script>
+
+</head>
+<body>
+<div class="mp">
+	<div class="mp-box">
+		
+		<img src="img/mplayer_error.png" alt="music cover" class="mp-cover">
+		
+		<div class="mp-info">
+			<p class="mp-name">暂无歌曲</p>
+			<p class="mp-singer">歌手名</p>
+			<p><span class="mp-time-current">00:00</span>/<span class="mp-time-all">00:00</span></p>
+		</div>
+		<div class="mp-btn">
+			<button class="mp-prev" title="上一首"></button>
+			<button class="mp-pause" title="播放"></button>
+			<button class="mp-next" title="下一首"></button>
+			<button class="mp-mode" title="播放模式"></button>
+		</div>
+		<div class="mp-pro">
+			<div class="mp-pro-current"></div>
+		</div>
+	</div>
+	<button class="mp-toggle">
+		<span class="mp-toggle-img"></span>
+	</button>
+	<div class="mp-lrc-box mp-lrc-show">
+		<ul class="mp-lrc"></ul>
+	</div>
+</div>
+<script src="js/music.js"></script>
+</body>
+</html>
